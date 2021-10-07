@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="RSS App"
+      content="Web site created to filter best deals from SecretFlying"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>RSS App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div class="container mb-5">
+      <h2 class="text-center mt-5">RSS App</h2>
+    </div>
+    <div class="container">
+      <!-- get and display current conditions !-->
+      <h4>Current conditions:</h4>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="conditions">
+          <tr class="condition1">
+            <td>1</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr class="condition2">
+            <td>2</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container mt-5">
+      <!-- get and display current deals !-->
+      <h4>Archived Deals:</h4>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody class="deals">
+          <!-- Rows get appended here !-->
+        </tbody>
+      </table>
+    </div>
+
+    <template id="dealrow">
+      <tr>
+        <td class="id"></td>
+        <td class="title">
+          <a class="link" target="_blank"></a>
+        </td>
+        <td class="title"></td>
+      </tr>
+    </template>
+
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
