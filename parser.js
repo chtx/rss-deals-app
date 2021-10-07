@@ -13,7 +13,7 @@ const pool = require("./db");
   let dealsDb = await pool.query("SELECT * FROM deals");
   let deals = dealsDb.rows;
 
-  console.error(conditions, num);
+  //console.log(conditions, num);
 
   //get feed
   let feed = await parser.parseURL("https://www.secretflying.com/feed/");

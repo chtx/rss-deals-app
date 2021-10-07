@@ -75,7 +75,7 @@ app.put("/conditions/:id", async (req, res) => {
       [type, value, id]
     );
 
-    res.json("Todo was updated");
+    res.json("Condition was updated");
   } catch (err) {
     console.error(err.message);
   }
@@ -91,7 +91,7 @@ app.delete("/conditions/:id", async (req, res) => {
       [id]
     );
 
-    res.json("Todo was deleted.");
+    res.json("Condition was deleted.");
   } catch (error) {
     console.error(err.message);
   }
