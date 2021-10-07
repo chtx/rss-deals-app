@@ -3,21 +3,6 @@ let parser = new Parser();
 
 const pool = require("./db");
 
-async () => {
-  let feed = await parser.parseURL("https://www.secretflying.com/feed/");
-
-  feed.items.forEach((item) => {
-    if (
-      item.title.includes("🔥") &&
-      item.categories.includes("Depart Mainland Europe")
-    ) {
-      let guid = item.guid.split("p=")[1];
-      console.log(guid);
-      console.log(item.title + "\n" + item.link);
-    }
-  });
-};
-
 (async () => {
   //get conditions from DB
   let conditionsDb = await pool.query("SELECT * FROM conditions");
