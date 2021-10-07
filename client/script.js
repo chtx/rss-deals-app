@@ -1,6 +1,6 @@
 async function getConditions() {
   try {
-    await fetch("http://localhost:5000/conditions", {
+    await fetch("/conditions", {
       //http://localhost:5000
       method: "GET",
       headers: { "Content-Type": "application/json" },
@@ -30,7 +30,7 @@ getConditions();
 
 async function getDeals() {
   try {
-    await fetch("http://localhost:5000/deals", {
+    await fetch("/deals", {
       //http://localhost:5000
       method: "GET",
       headers: { "Content-Type": "application/json" },

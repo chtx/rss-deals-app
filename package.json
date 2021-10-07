@@ -1,13 +1,13 @@
 {
-  "name": "server",
+  "name": "rssapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "RSS App showing flight deals",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "chtx",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
