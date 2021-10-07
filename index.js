@@ -128,31 +128,6 @@ app.delete("/deals/:id", async (req, res) => {
 
 //FINISH DEALS ROUTES
 
-//get the string
-app.post("/string", async (req, res) => {
-  try {
-    const { string } = req.body;
-    const processed = await converter.processStr(string);
-    res.json(processed);
-  } catch (err) {
-    console.error(err.message);
-  }
-});
-
-//get the array
-app.post("/arr", async (req, res) => {
-  try {
-    const { hanzi } = req.body;
-    let response = [];
-    for (let i = 0; i < hanzi.length; i++) {
-      response.push(await converter.processStr(hanzi[i]));
-    }
-    res.json(response);
-  } catch (err) {
-    console.error(err.message);
-  }
-});
-
 app.listen(PORT, () => {
   console.log(`server has started on port ${PORT}`);
 });
